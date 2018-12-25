@@ -1,0 +1,856 @@
+@import 'vars'
+
+@media screen and(max-width: 1440px)
+	.packages
+		&__slider
+			.slick-slide
+				margin-right: 26px
+	
+	.range
+		&__cards 
+			margin: 62px 6.25vw 81px 6.25vw
+			.ps-image
+				width: 19.306vw
+				height: 19.306vw
+				img
+					height: 100%
+	
+	
+@media screen and(max-width: 1366px)
+	.map
+		.container-fluid 
+			width: 90%
+	.map .location 
+		margin-left: 0px !important
+	.container-picture 
+		top: -10px
+	.about
+		h1, .main-caption
+			margin-left: 85px
+		p 
+			margin-left: 85px
+	#map 
+		width: 100% !important
+		position: relative
+		top: -38px
+		left: 0px !important
+	.wash 
+		h1, .main-capt
+			margin-left: 69px
+		&__bg-left
+			padding-left: 50px
+			h2 + p
+				padding-right: 20px
+			.tabs 
+				li
+					margin-right: 120px
+		&__bg-right 
+			h2
+				+ p
+					padding-right: 0
+	
+	// range
+
+	.range
+		&__cards 
+			.ps-image 
+				p
+					bottom: 40px
+
+	// end range
+
++media-breakpoint-up(xl)
+	
++media-breakpoint-down(lg)
+	// weather
+
+	.weather 
+		h1, .main-caption
+			margin-left: 40px
+			+ p
+				margin-left: 40px
+
+	// end weather
+	
+	header 
+		.contact-us,
+		.reload
+			font-size: 14px
+		.reload
+			padding: 10px 8px
+		
+	.main 
+		.description-container 
+			h2
+				padding-right: 145px
+	
+	// packages
+
+	.packages
+		&__slider 
+			.ps-image 
+				p
+					font-size: 24px
+		.grid-container 
+			.grid-item
+				font-size: 20px
+
+	// end packages
+
+	// wash
+
+	.wash 
+		h1, .main-capt
+			font-size: 44px
+			margin-top: 24px
+			line-height: 40px
+			span
+				font-size: 70px
+				left: 200px
+				bottom: 72px	
+		&__description
+			font-size: 16px
+			padding-right: 20px
+		&__bg-left,
+		&__bg-right 
+			padding-left: 30px
+			h2
+				font-size: 30px
+				+ p
+					font-size: 16px
+		.tabs 
+			li 
+				a
+					font-size: 20px
+					img
+						margin-top: 4px	
+				&:first-child
+					margin-right: 100px
+				&:before
+					width: 200px
+		&__bg-left 
+			.descr-block 
+				p
+					font-size: 16px
+					padding-right: 200px
+
+	// end wash
+
+	// range
+
+	.range 
+		h1, .main-caption
+			font-size: 50px
+		&__cards
+			margin-bottom: 0
+			.ps-image 
+				p
+					bottom: 100px	
+		.grid 
+			.grid-item
+				margin-right: 50px
+
+	// end range
+
+
+	//movie
+	
+	.movie
+		&__container
+			width: 100%
+			margin-left: 0
+			height: 565px
+			.overlay
+				top: 39px
+				height: 86%	
+			h1, .main-caption
+				left: 455px
+			.play
+				left: 455px
+	
+
+	//end movie
+	
++media-breakpoint-down(md)
+
+
+
+	
+
+	
+	// weather
+	.map .location 
+		margin-left: 0px !important
+	.weather 
+		&__container
+			margin-top: 0
+			justify-content: space-between
+			.weater-item
+				margin: 0
+				&:first-child
+					margin-left: 0
+
+	// end weather
+	
+	
+
+	// about
+
+	.about 
+		.container-picture
+			position: static
+		.blue-block
+			top: auto
+			bottom: 0
+			width: 100%
+
+	// end about
+	
+	//movie
+	
+	.movie
+		&__container
+			.overlay
+				top: 102px	
+				height: 64%	
+			h1, .main-caption
+				font-size: 32px
+				line-height: 37px
+				top: 245px
+				left: 320px
+			.play
+				font-size: 20px
+				left: 319px
+	
+
+	//end movie
+	
+	
+	// header
+
+	header 
+		nav
+			display: none
+		.contact-us,
+		.reload
+			display: none
+		.hamburger
+			display: block
+		.logo 
+			img
+				margin: 0
+				margin-left: 20px
+
+	// end header
+
+
+	// main
+	
+	.main 
+		margin-bottom: 90%
+		.description-container 
+			margin-left: 0
+			h1
+				display: table
+				margin-left: auto
+				margin-right: auto
+			h2
+				padding-right: 0
+				text-align: center
+				+ p
+					text-align: center
+					padding-right: 0
+		.bg-container
+			top: 0
+		.slider-container 
+			margin-left: 0!important
+			.dots-container
+				transform: rotate(180deg)
+				width: 100%!important
+				left: 0!important
+				height: 70px!important
+				top: auto!important
+				bottom: 0
+			.slick-dots
+				transform: rotate(0deg)!important
+				left: 0px!important
+				z-index: 2
+				bottom: 26px!important
+	
+	// end main	
+
+	
+	// package
+
+	.packages 
+		h4, h2
+			font-size: 16px
+			margin-left: 15px
+		.arrows 
+			ul
+				margin-right: 50px
+		&__slider
+			margin-left: 0
+		.desription
+			font-size: 16px
+			margin-left: 15px
+		.grid-container 
+			.grid-item
+				font-size: 16px
+
+	// end package
+
+
+	//wash
+
+	.wash 
+		h1, .main-capt
+			margin-left: 24%
+			margin-bottom: 30px
+		&__description
+			text-align: center
+			padding: 0 60px
+		.tabs 
+			li
+				&::before
+					width: 120px
+				&:first-child
+					margin-right: 40px
+				a
+					font-size: 16px
+		&__bg-left h2+p, 
+		&__bg-right h2+p
+			font-size: 15px
+		&__bg-left 
+			h3, .sub-capt
+				font-size: 28px
+				margin-bottom: 10px
+				margin-left: 0
+			.descr-block
+				margin-left: 0
+				p
+					font-size: 16px
+					line-height: 24px
+				.picture	
+					// top: -11%
+					img
+						max-width: 60%
+
+	//end wash
+
+	// range
+	
+	.range 
+		h1, .main-caption
+			margin-left: 20px
+			+ p
+				margin-left: 20px
+		.description
+			font-size: 16px	
+			margin-left: 20px
+		&__cards
+			margin-right: 0
+			margin-left: 20px
+			margin-top: 15px
+			margin-bottom: 30px
+			.ps-image
+				width: 378px
+				height: 160px
+				p
+					bottom: 0
+					left: 13px
+					font-size: 28px
+		.grid 
+			.grid-item
+				margin-right: 35px
+				font-size: 18px
+	
+
+	// end range
+	
++media-breakpoint-down(sm)
+
+
+	// weather
+
+	.weather 
+		&__container
+			.weater-item
+				width: 45%
+		.cards
+			width: 100%
+			margin-left: 0
+			img
+				margin: 0 auto
+		h1, .main-caption
+			display: table
+			margin-left: auto!important
+			margin-right: auto
+			text-align: center
+			margin-left: 0
+			span
+				right: -108px
+			+ p
+				text-align: center
+				width: auto
+
+	// end weather
+	
+	// about
+	
+	.about 
+		h1, .main-caption
+			display: table
+			margin-left: auto
+			margin-right: auto
+		p
+			margin-left: 0
+			text-align: center
+			padding: 0px 20px
+	// end about
+	
+	//movie
+	
+	.movie
+		&__container
+			.overlay
+				top: 149px	
+				height: 47%	
+			h1, .main-caption
+				left: 160px
+			.play
+				left: 160px
+	
+
+	//end movie
+	
+	
+	// header
+
+	header 
+		.hamburger
+			left: 40%	
+
+	// end header
+	
+	
+	// packages
+
+	.packages
+		margin-top: 675px
+		&__slider
+			margin-left: 15px
+			margin-bottom: 35px
+		.desription
+			margin-left: 15px
+			padding-right: 0
+		.arrows 
+			ul
+				margin-right: 20px
+		.grid-container 
+			.grid-item
+				margin-right: 42px
+				width: 100%
+	
+	// end packages
+
+
+	// wash
+
+	.wash 
+		h1, .main-capt
+			display: table
+			margin-left: auto
+			margin-right: auto
+		&__bg-left, 
+		&__bg-right
+			padding-left: 0
+
+			h2
+				text-align: center
+				+ p
+					text-align: center
+					padding: 0
+					padding-right: 15px !important
+					padding-left: 15px !important
+		&__bg-left,
+		&__bg-right
+			.tabs
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: space-around
+				li
+					margin: 0
+					a
+						font-size: 18px
+					&:before
+						width: 180px
+		&__bg-left
+			h3, .sub-capt
+				text-align: center
+			.descr-block 
+				p
+					padding: 0 60px
+				ul
+					margin-left: 11%
+					li
+						display: inline-block
+						margin-right: 20px
+				.picture
+					top: 70%
+					right: -8%
+					width: 100%
+					img
+						margin: 0 auto
+						max-width: 55%
+
+	// end wash
+
+	//range
+
+	.range 
+		h1, .main-caption
+			font-size: 36px
+			line-height: 40px
+			span
+				font-size: 45px
+				right: -139px
+				bottom: 60px
+			+ p
+				font-size: 16px
+				line-height: 23px
+		&__cards 
+			.ps-image 
+				p
+					bottom: 40px
+					left: 5px
+					font-size: 16px
+		.grid 
+			.grid-item
+				width: 40%
+				font-size: 16px
+				margin-right: 30px
+		
+	//end range
+
+
+	.range__cards .ps-image
+		width: 48.831vw
+		height: 20.779vw
+
+	// footer
+
+	footer
+		padding: 49px 40px	
+	
+	// end footer
+	
++media-breakpoint-down(xs)
+	footer .btn-facebook 
+		padding: 13px 4px 0px 43px !important 
+		font-size: 10px !important
+	.range 
+		margin-top: -83px
+	.about 
+		top: -72px
+		margin-bottom: 0px
+	.movie 
+		margin-bottom: 0 
+		margin-top: -194px
+	.wash__bg-right
+		height: 365px
+	// footer
+	.ps-image:first-child
+		margin: 0 auto !important
+		margin-bottom: 15px !important
+	.ps-image:last-child
+		margin: 0 auto !important
+		margin-bottom: 15px !important
+	footer
+		padding-left: 0
+		padding-right: 0
+		.btn-facebook
+			font-size: 12px
+			padding: 13px 19px 0px 43px
+		.copyright
+			display: inline-block
+			font-size: 14px
+			text-align: center
+		.author
+			width: 100%
+			text-align: center
+			display: inline-block
+		.logo
+			img
+				width: 80px
+			span
+				font-size: 14px
+
+	// end footer
+	
+	// weather
+
+	.weather 
+		&__container
+			flex-direction: column
+			.weater-item
+				width: 100%
+				margin-bottom: 30px
+		h1, .main-caption
+			font-size: 45px
+			margin-bottom: 0
+			span
+				font-size: 55px
+				right: -73px
+			+ p
+				font-size: 12px
+				margin-left: 0
+
+	// end weather
+	
+	
+	// about
+	
+	.about 
+		.blue-block
+			height: 420px
+		h1, .main-caption
+			font-size: 45px
+			line-height: 40px
+			margin-top: 0
+			span
+				bottom: 60px
+				right: -29px
+				font-size: 50px
+		p
+			font-size: 14px
+			line-height: 22px
+			&:last-child
+				margin-bottom: 150px
+		&:after
+			width: 100%
+			bottom: 0	
+		
+	// end about
+	
+	
+	//movie
+	
+	.movie
+		.container
+			padding: 0
+		&__container
+			height: auto
+			margin-top: 0
+			.overlay
+				top: 190px	
+				height: 32.5%
+			&:before
+				top: 26%
+				right: 0
+				width: 100%
+			h1, .main-caption
+				left: 13px
+				font-size: 18px
+			.play
+				font-size: 17px
+				left: 116px
+				top: 285px
+		
+	
+
+	//end movie
+	
+	
+	// header
+
+	header 
+		.logo 
+			img
+				width: 60%
+				margin-left: 0
+		.hamburger
+			top: 12px
+			width: 30px
+			span
+				height: 4px
+
+	// end header
+	
+	// main
+	.main 
+		.container-fluid
+			.row
+				div.pr-0
+					padding-right: 15px!important
+			.bg-container
+				height: auto
+				.slider-container
+					margin-top: 0
+					.slick-slide 
+						img
+							width: 100%
+			.description-container 
+				h1
+					font-size: 60px
+					margin-top: 50px
+					margin-bottom: 25px
+					line-height: 50px
+					span
+						font-size: 90px
+						bottom: 67px
+						left: 80px
+				h2
+					font-size: 16px
+					margin-left: 0
+					+ p
+						margin-left: 0
+
+	// end main
+
+	// packages
+
+	.packages
+		margin-top: 750px
+		h4, h2
+			margin-bottom: 20px
+			margin-left: 0
+			text-align: center
+		.arrows 
+			ul
+				justify-content: center
+				margin-right: 0
+		&__slider
+			margin-left: 23px
+			.slick-slide 
+				img
+					margin: 0 auto
+				.ps-image
+					p
+						left: 40px
+		.desription
+			margin-left: 0
+			text-align: center
+			margin-bottom: 20px
+		.grid-container 
+			.grid-item
+				margin-right: 0
+				text-align: center
+	
+	// end packages
+
+	// wash
+
+	.wash 
+		padding: 50px 0
+		&:after
+			width: 100%
+			height: 50px
+			bottom: 0
+		&:before
+			width: 100%
+		h1, .main-capt
+			font-size: 30px
+			line-height: 26px
+			margin-top: 0
+			span
+				font-size: 50px	
+				bottom: 40px
+				left: 140px
+		&__description
+			padding: 0 30px
+			font-size: 14px
+		&__bg-right
+			h2 
+				font-size: 24px
+				margin-bottom: 15px
+				+ p
+					padding: 0 25px
+					padding-left: 38px
+		&__bg-left 
+			padding-top: 30px
+			padding-bottom: 100px
+			h2
+				font-size: 24px
+				margin-bottom: 15px
+				+ p
+					padding: 0 25px
+					padding-left: 10px
+			h3, .sub-capt
+				font-size: 26px
+				margin-top: 30px
+			.descr-block
+				p
+					padding: 0 30px
+				.picture
+					img
+						width: 200px
+		.tabs 
+			li
+				
+				&:first-child
+					margin-right: 0
+				&:before
+					width: 130px
+				a
+					font-size: 14px
+					img
+						margin-right: 10px
+		
+	// end wash
+
+
+	// range
+
+	.range 
+		.description
+			margin-left: 0
+			text-align: center
+		h1, .main-caption
+			font-size: 24px
+			line-height: 25px
+			span
+				font-size: 25px
+				right: -83px
+				bottom: 38px
+			+ p
+				margin-left: 0
+				font-size: 15px
+				padding-right: 0
+				text-align: center
+		&__cards
+			margin-left: 0
+			flex-direction: column
+			.ps-image
+				width: 278px
+				height: 278px
+				margin: 0 auto
+				margin-bottom: 15px
+				p
+					left: 25px
+					bottom: 25px
+					font-size: 30px
+		.grid
+			flex-direction: column
+			padding: 15px 0 0 0
+			.grid-item
+				width: 100%
+				text-align: center
+
+	// end range
+
+	.fix-overflow .popup-menu
+		width: 100%
+		top: 75px
+
+@media screen and (max-width: 425px)
+	.packages
+		margin-top: 560px
+	
+
+@media screen and (max-width: 375px)
+	.packages
+		margin-top: 500px

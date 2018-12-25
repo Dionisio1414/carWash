@@ -1,0 +1,1020 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+// helper styles
+
+
+::placeholder
+	color: rgba(69, 57, 57, 0.5)
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a
+	outline: none
+html
+	overflow-x: hidden
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: #000
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:focus
+		text-decoration: none
+	&:active
+		text-decoration: none		
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.clearfix::after
+	content: ""
+	clear: both
+	display: table
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right	
+
+.text-left
+	text-align: left
+
+b, strong
+	font-weight: bold
+
+.fix-overflow-all
+	overflow: hidden
+
+.ov-fl
+	overflow: hidden
+
+// header
+header.sticky
+	padding-top: 5px 
+
+	height: 88px
+	background: #fff
+	z-index: 999
+
+	.logo 
+		img 
+			-webkit-transform: scale(0.7)
+			-ms-transform: scale(0.7)
+			transform: scale(0.7)
+			
+			
+	.reload
+		color: #000
+
+header
+	position: fixed
+	width: 100%
+	z-index: 1
+	padding: 15px 0
+
+
+	.logo
+		img
+			margin: 0 auto
+			transition: all 0.8s
+			
+	nav
+		margin-top: 25px
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+				margin-right: 52px
+				a
+					font-size: 17px
+					color: #000
+	.contact-us,
+	.reload
+		font-family: "BarlowSemibold", sans-serif
+		font-size: 17px
+		border-radius: 5px 
+		height: 47px
+		margin-top: 15px
+	.reload
+		font-family: Arial, sans-serif
+		border: 1px solid #FF0000
+		padding: 10px 20px
+		margin-right: 20px
+		margin-left: auto
+		color: #fff
+	.contact-us
+		background-color: #FF0000
+		padding: 13px 30px
+		margin-right: 27px
+		color: #fff
+	//hamburger
+	.hamburger
+		display: none
+		width: 37px
+		height: 30px
+		position: relative
+		top: 30px
+		left: 140px
+		cursor: pointer
+		span
+			display: block
+			position: absolute
+			left: 0
+			height: 6px
+			width: 100%
+			background-color: #1D2C5B
+			border-radius: 5px
+			opacity: 1
+			transform: rotate(0deg)
+			transition: .3s ease-in-out
+			&:nth-child(1)
+				top: 0
+			&:nth-child(2),
+			&:nth-child(3)
+				top: 11px
+			&:nth-child(4)
+				top: 22px
+	.hamburger.open
+		span
+			&:nth-child(1)
+				top: 18px
+				width: 0%
+				left: 50%
+			&:nth-child(2)
+				transform: rotate(45deg)
+    			z-index: 11
+			&:nth-child(3)
+				transform: rotate(-45deg)
+    			z-index: 11
+			&:nth-child(4)
+		    	top: 18px
+		    	width: 0%
+    			left: 50%
+// end header
+
+
+// main section
+.fix-overflow
+	overflow: hidden
+	position: relative
+	.popup-menu
+		display: none
+		position: absolute
+		background-color: #1D2C5B
+		height: 100%
+		right: 0
+		top: 100px
+		width: 50%
+		padding: 40px
+		border-radius: 5px
+		z-index: 5
+		opacity: 0
+		ul
+			padding: 0
+			margin: 0
+			list-style-type: none
+			li
+				display: block
+				margin-bottom: 15px
+				a
+					font-size: 17px
+					text-transform: uppercase
+					color: #fff
+		.reload
+			font-family: "BarlowSemibold", sans-serif
+			border: 1px solid red
+			padding: 10px 20px
+			margin-right: 20px
+			border-radius: 5px
+			margin-left: auto
+			margin-bottom: 20px
+			float: left
+			color: #fff
+		.contact-us
+			font-family: "BarlowSemibold", sans-serif
+			background-color: red
+			padding: 12px 30px
+			margin-right: 27px
+			border-radius: 5px
+			float: left
+			color: #fff
+	.popup-menu.open
+		display: block
+		opacity: 1
+.main
+	margin-top: 115px
+	position: relative
+	margin-bottom: 110px
+	.description-container
+		margin-left: 87px
+		h1
+			position: relative
+			font-family: "KhandBold", sans-serif
+			font-size: 110px
+			text-transform: uppercase
+			margin-top: 118px
+			margin-bottom: 44px
+			line-height: 91px
+			letter-spacing: 0px
+			color: #000
+			span
+				position: absolute
+				left: 153px
+				bottom: 138px
+				font-family: "Kristi", sans-serif
+				font-size: 140px
+				text-transform: capitalize
+		h2
+			font-family: "BarlowMedium", sans-serif
+			font-size: 25px
+			margin-bottom: 23px
+			margin-left: 8px
+			letter-spacing: 0.1px
+			+ p
+				font-family: "BarlowRegular", sans-serif
+				font-size: 17px
+				margin-left: 8px
+				letter-spacing: 0.1px
+				padding-right: 220px
+	.bg-container
+		position: absolute
+		top: -116px
+		width: 100%
+		height: 634px
+		.overlay
+			background: linear-gradient(180deg, rgba(19, 38, 91, 0.93) 0%, rgba(23, 10, 48, 0.75) 100%)
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+		.slider-container
+			position: relative
+			margin-top: 105px
+			margin-left: -122px
+			.slick-dots
+				transform: rotate(90deg)
+				left: 170px
+				z-index: 2
+				bottom: 39px
+				li
+					width: 5px
+					height: 5px
+					margin-right: 6px
+					button
+						border-radius: 50%
+						border: 1px solid #fff
+						width: 2px
+						height: 2px
+						padding: 3px
+			.dots-container
+				position: absolute
+				top: 25%
+				left: 440px
+				background-color: #3964d8
+				height: 400px
+				width: 110px
+		.slick-dotted.slick-slider
+			margin-bottom: 0!important
+	
+// end main section
+
+// Section packages
+
+.packages
+	margin-bottom: 64px
+	margin-top: -7px
+	h4
+		font-family: "BarlowRegular", sans-serif
+		font-size: 17px
+		margin-left: 93px
+	.arrows
+		ul
+			display: flex
+			justify-content: flex-end
+			padding: 0
+			margin: 0
+			list-style-type: none
+			margin-right: 93px
+			li
+				display: inline-block
+				&:first-child
+					margin-right: 9px
+				> img
+					vertical-align: baseline
+	&__slider
+		margin-top: 30px
+		margin-left: 93px
+		margin-bottom: 97px
+		.slick-slide
+			margin-right: 26px
+		.ps-image
+			position: relative
+			.shadow
+				display: block
+				position: absolute
+				top: 0
+				left: 0px 
+				height: 100%
+				width: 100%
+				
+				background-image: linear-gradient(228deg, rgba(0, 0, 0, 0) 55%, #000000 100%)
+				//background-image: linear-gradient(228deg, rgba(0, 0, 0, 0) 0%, #000000 100%)
+			p
+				position: absolute
+				bottom: 0
+				left: 28px
+				font-family: "KhandSemiBold", sans-serif
+				font-size: 35px
+				text-transform: uppercase
+				color: #fff
+				width: 130px
+				line-height: 33px
+	.desription
+		font-size: 17px
+		margin-left: 167px
+		padding-right: 50px
+	.grid-container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-start
+		flex-wrap: wrap
+		margin-top: 10px
+		.grid-item
+			font-family: "BarlowMedium", sans-serif
+			font-size: 22px
+			border-top: 1px solid #bfbfbf
+			width: 34%
+			margin-right: 51px
+			margin-bottom: 46px 
+			white-space: nowrap
+
+// End section packages
+
+
+// Section wash
+
+.wash
+	position: relative
+	background-color: #000
+	padding: 100px 0
+	padding-bottom: 0
+	margin-bottom: 107px
+	top: -20px
+	&::before
+		content: ""
+		position: absolute
+		left: 0
+		top: -25px
+		width: 380px
+		height: 25px
+		background-color: #ff0000
+	&::after
+		content: ""
+		position: absolute
+		right: 0
+		bottom: -46px
+		width: 380px
+		height: 46px
+		background-color: #ff0000
+	.container-fluid
+		.row:first-child
+			margin-bottom: 66px
+	h1, h2.main-capt
+		position: relative
+		font-family: "KhandBold", sans-serif
+		font-size: 60px
+		margin-top: 24px
+		margin-left: 111px
+		line-height: 52px
+		text-transform: uppercase
+		color: #fff
+		top: 6px
+		span
+			position: absolute
+			left: 270px
+			bottom: 73px
+			font-family: "Kristi", sans-serif
+			font-size: 80px
+			text-transform: capitalize
+	&__description
+		font-family: "BarlowMedium", sans-serif
+		font-size: 17px
+		padding-right: 77px
+		line-height: 26px
+		color: #fff
+		margin-left: 9px
+		margin-top: 4px
+	&__bg-left
+		background-color: #0c2362
+		padding-top: 72px
+		padding-left: 107px
+		height: 100%
+		padding-bottom: 217px
+		
+
+		h2
+			font-family: "BarlowLight", sans-serif
+			font-size: 35px
+			margin-bottom: 37px
+			color: #fff
+
+		p
+			font-family: "BarlowMedium", sans-serif
+			font-size: 17px
+			padding-right: 55px 	
+			color: #fff
+
+		h3, h2.sub-capt
+			font-family: "KhandBold", sans-serif
+			font-size: 35px
+			margin-top: 81px
+			margin-left: 73px
+			margin-bottom: 30px
+			color: #fff
+
+		.descr-block
+			display: none
+			position: relative
+			margin-left: 73px
+			min-height: 280px
+
+
+			p
+				font-family: "BarlowMedium", sans-serif
+				font-size: 17px
+				padding-right: 260px
+				margin-bottom: 24px
+				line-height: 27px
+				color: #fff
+			ul
+				padding: 0
+				padding-left: 0px
+				list-style: none
+
+				li
+					color: #fff
+					position: relative
+					padding-left: 8px
+				li:before  
+					content: "•"
+					color: #fff
+					position: absolute
+					left: 0px
+					top: -2px
+
+			.picture
+				position: absolute
+				z-index: 1
+				top: -60px
+				right: -540px
+				
+		.descr-block.active
+			display: flex
+		.tabs
+			padding: 0
+			margin: 0
+			list-style-type: none
+			margin-top: 56px
+			li
+				position: relative
+				display: inline-block
+				margin-right: 150px
+				&::before
+					content: ""
+					position: absolute
+					top: -7px
+					left: 0	
+					background-color: #384A7E
+					width: 230px
+					height: 2px
+				&:last-child
+					margin-right: 0
+				a
+					font-family: "BarlowMedium", sans-serif
+					font-size: 22px
+					color: #fff
+					img
+						float: left
+						margin-right: 20px
+						margin-top: 7px
+			li.active
+				&::before
+					background-color: #ff0000
+	&__bg-right
+		background-color: #3964d8
+		padding-top: 72px
+		padding-left: 67px
+		height: 517px
+		h2
+			font-family: "BarlowLight", sans-serif
+			font-size: 35px
+			margin-bottom: 34px
+			color: #fff
+			margin-left: 2px
+			margin-top: 6px
+		p
+			font-family: "BarlowMedium", sans-serif
+			font-size: 17px
+			padding-right: 55px !important
+			color: #fff
+		.tabs
+			padding: 0
+			margin: 0
+			list-style-type: none
+			margin-top: 56px
+			li
+				position: relative
+				display: inline-block
+				margin-right: 150px
+				&::before
+					content: ""
+					position: absolute
+					top: -7px
+					left: 0	
+					background-color: #384A7E
+					width: 230px
+					height: 2px
+				&:last-child
+					margin-left: 5px
+				a
+					font-family: "BarlowMedium", sans-serif
+					font-size: 22px
+					color: #fff
+					img
+						float: left
+						margin-right: 20px
+						margin-top: 7px
+			li.active
+				&::before
+					background-color: #ff0000
+
+// End section wash
+
+
+// Section range
+
+.range
+	margin-top: -30px
+	margin-bottom: 30px
+	h1, .main-caption
+		position: relative
+		font-family: "KhandBold", sans-serif
+		font-size: 60px
+		margin-top: 24px
+		margin-left: 95px
+		margin-bottom: 17px
+		line-height: 52px
+		text-transform: uppercase
+		display: inline-block
+		color: #000
+		span
+			position: absolute
+			bottom: 59px
+			right: -249px
+			font-family: "Kristi", sans-serif
+			font-size: 80px
+			text-transform: capitalize
+		+ p
+			font-family: "BarlowMedium", sans-serif
+			font-size: 17px
+			line-height: 26px
+			margin-left: 89px
+			padding-right: 85px
+			color: #000
+	&__cards
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		margin: 62px 90px 81px 90px
+		
+		.ps-image
+			position: relative
+			width: 278px
+			height: 278px
+			margin-right: 19.5px
+			margin-left: 19.5px
+
+
+			
+			
+
+
+
+			.shadow
+				
+				position: absolute
+				bottom: 0
+				left: 0px 
+				height: 100%
+				width: 100%
+				
+				background-image: linear-gradient(228deg, rgba(0, 0, 0, 0) 55%, #000000 100%)
+				//background-image: linear-gradient(228deg, rgba(0, 0, 0, 0) 0%, #000000 100%)
+				
+
+
+			a 
+				outline: none
+			img
+				width: 100%
+
+
+
+
+				
+				
+
+				
+			p
+				position: absolute
+				bottom: 0
+				left: 28px
+				font-family: "KhandSemiBold", sans-serif
+				font-size: 35px
+				text-transform: uppercase
+				color: #fff
+				width: 130px
+				line-height: 33px
+				margin-bottom: 7px
+		.ps-image:first-child
+			margin-left: 0
+		.ps-image:last-child
+			margin-right: 0
+	.description
+		font-family: "BarlowRegular", sans-serif
+		font-size: 17px
+		line-height: 26px
+		margin-left: 93px
+		margin-top: 3px
+		color: #000
+	.grid
+		display: flex
+		flex-wrap: wrap
+		padding: 15px 0px 0px 45px	
+		.grid-item
+			position: relative
+			font-family: "BarlowMedium", sans-serif
+			font-size: 22px
+			margin-right: 68px
+			margin-bottom: 49px
+			width: 25%
+			&::before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 1px
+				top: -6px
+				left: 0
+				background-color: #bfbfbf
+
+// End section range
+
+
+// section movie
+
+.movie
+	margin-bottom: 128px
+	margin-top: -30px
+
+	&__container
+		position: relative
+		width: 1080px
+		height: 564px
+		margin-top: 60px
+		margin-left: 14px
+		&:before
+			content: ""
+			position: absolute
+			top: -30px
+			right: -180px
+			background-color: #FF0000
+			width: 554px
+			height: 312px
+			z-index: -1
+		.overlay
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: #000
+			opacity: .3
+		h1, .main-caption
+			position: absolute
+			left: 540px
+			top: 157px
+			font-family: "KhandBold", sans-serif
+			font-size: 60px
+			text-transform: uppercase
+			color: #fff
+			line-height: 52px
+			width: 456px
+			height: 172px
+		.play
+			position: absolute
+			top: 319px
+			left: 542px
+			font-family: "BarlowMedium", sans-serif
+			font-size: 22px
+			color: #fff
+			img
+				vertical-align: middle
+				margin-left: 9px
+		video
+			height: 564px
+// end section movie
+
+
+// section about Jack's
+
+.about
+	position: relative
+	background-color: #000
+	padding: 106px 0 77px 0
+	margin-bottom: 127px
+	top: -30px
+	&::after
+		content: ""
+		background-color: #FF0000
+		position: absolute
+		bottom: -28px
+		left: 0
+		width: 371px
+		height: 30px
+	h1, .main-caption
+		position: relative
+		font-family: "KhandBold", sans-serif
+		font-size: 60px
+		margin-top: 21px
+		margin-left: 95px
+		margin-bottom: 12px
+		line-height: 52px
+		text-transform: uppercase
+		display: inline-block
+		margin-bottom: 26px
+		color: #fff
+		span
+			position: absolute
+			bottom: 78px
+			right: -51px
+			font-family: "Kristi", sans-serif
+			font-size: 80px
+			text-transform: capitalize
+	p
+		position: relative
+		font-family: "BarlowMedium", sans-serif
+		font-size: 17px
+		margin-left: 95px
+		margin-bottom: 21px
+		line-height: 30px
+		color: #fff	
+		z-index: 2
+	.container-picture
+		position: absolute
+		bottom: 0
+		left: -139px
+		z-index: 1
+	.gradient
+		background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.47) 100%);
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+	.blue-block
+		position: absolute
+		top: 0
+		right: 0
+		background-color: #3964d8
+		width: 633px
+		height: 478px
+
+
+// End section about Jack's
+
+
+// Section weather
+
+.weather
+	position: relative
+	margin-bottom: 60px
+	top: -32px
+	left: 2px
+	h1, .main-caption
+		position: relative
+		font-family: "KhandBold", sans-serif
+		font-size: 60px
+		margin-top: 21px
+		margin-left: 95px
+		margin-bottom: 12px
+		line-height: 52px
+		text-transform: uppercase
+		display: inline-block
+		margin-bottom: 26px
+		color: #000
+		span
+			position: absolute
+			bottom: 12px
+			right: -110px
+			font-family: "Kristi", sans-serif
+			font-size: 80px
+			text-transform: capitalize
+		+ p
+			font-family: "BarlowSemiBold", sans-serif
+			font-size: 17px
+			width: 172px
+			margin-left: 94px
+			line-height: 26px
+			span
+				color: #FF0000
+	.cards
+		display: inline-block
+		margin-left: 67px
+		margin-top: 10px
+	&__container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		margin-top: -26px
+		.weater-item
+			background-color: #e9e9e9
+			width: 40%	
+			padding: 33px 34px 23px 34px
+			margin-right: 40px
+			&:first-child
+				margin-left: 7px
+			h2
+				font-family: "KhandSemiBold", sans-serif
+				font-size: 30px
+				text-transform: uppercase
+				text-align: center
+				margin-bottom: 23px
+				color: #000
+			img
+				margin: 0 auto
+			.temperature
+				font-family: "BarlowSemibold", sans-serif
+				text-align: center
+				font-size: 55px
+				margin-bottom: 0
+			.description
+				font-size: 17px
+				text-align: center
+			
+// End section weather
+
+
+// section map
+
+.map
+	#map 
+		width: 906px
+		position: relative
+		top: -38px
+		left: -48px
+
+	.container-fluid
+		width: 80%
+	
+
+	.location
+		padding: 0
+		margin: 0
+		margin-top: 38px
+		margin-left: 130px
+		list-style-type: none
+		li
+			position: relative
+			margin-bottom: 44px
+			a
+				font-family: "BarlowMedium", sans-serif
+				font-size: 22px
+				color: #000
+				margin-left: 6px
+				img
+					float: left
+					margin-right: 10px
+					margin-top: 8px
+			&::before
+				content: ""
+				position: absolute
+				top: -7px
+				left: 0
+				background-color: #bfbfbf
+				width: 100%
+				height: 1px
+	#map
+		height: 416px
+		//margin-left: 96px
+
+
+
+// end section map
+
+
+// footer
+
+footer
+	background-color: #000
+	padding: 50px 79px
+	padding-top: 50px
+	margin-top: 63px
+	.container-fluid
+		.row:first-child
+			margin-bottom: 37px
+	span
+		color: #fff
+	.copyright
+		font-family: "BarlowLight", sans-serif
+		letter-spacing: -.5px
+	.author
+		float: right
+		letter-spacing: -.5px
+	.logo
+		img
+			width: 124px
+		span
+			font-family: "BarlowSemiBold", sans-serif
+			font-size: 17px
+			margin-left: 7px
+	.btn-facebook
+		display: inline-block
+		position: relative
+		font-family: "BarlowSemiBold", sans-serif
+		font-size: 17px
+		border: 1px solid #FF0000
+		padding: 9px 21px 13px 57px
+		border-radius: 3px
+		height: 45px
+		margin-top: 19px
+		//margin-left: 163px
+		margin-right: 16px
+		color: #fff
+		&::before
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			background-color: #FF0000
+			width: 40px
+			height: 100%
+		&:last-child
+			margin-left: 15px
+			
+		img
+			position: absolute
+			left: 12px
+			top: 11px
+.copyright 
+	margin-left: 11px
+	font-size: 15.5px
+	a 
+		color: #fff
+.author
+	margin-right: 13px
+	font-size: 15.5px
+// end footer
+
+.mfp-wrap .mfp-content .white-popup-block
+	justify-content: center
+	display: flex
+	 
+	
+@import "media" // Always at the end
+
+.author 
+	a 
+		color: #fff
